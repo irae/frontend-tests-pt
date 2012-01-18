@@ -1,0 +1,9 @@
+bin/*.war
+bin/*.jar
+logs/*
+*.bak
+jenkins/war
+jenkins/plugins/cvs*
+jenkins/plugins/maven*
+jenkins/plugins/subversion*
+jenkins/plugins/ssh-slaves/*
