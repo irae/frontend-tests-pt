@@ -1,10 +1,12 @@
-bin/*.war
-bin/*.jar
+!**/.gitkeep
+
+bin/*
 logs/*
-!logs/.gitkeep
-*.bak
+
 jenkins/war
 jenkins/plugins/cvs*
 jenkins/plugins/maven*
 jenkins/plugins/subversion*
 jenkins/plugins/ssh-slaves/*
+
+*.bak
