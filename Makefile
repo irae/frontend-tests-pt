@@ -25,6 +25,8 @@ downloads:
 clean:
 	@echo "Deleting logs and stuff"
 	@rm -rf $(SRCDIR)/logs/*
+	@# restore .gitkeep
+	@touch $(SRCDIR)/logs/.gitkeep
 #
 .PHONY: clean-downloads
 clean-downloads:
