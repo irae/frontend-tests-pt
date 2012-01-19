@@ -4,9 +4,7 @@ bin/*
 logs/*
 
 jenkins/war
-jenkins/plugins/cvs*
-jenkins/plugins/maven*
-jenkins/plugins/subversion*
-jenkins/plugins/ssh-slaves/*
+jenkins/plugins
+jenkins/hudson.plugins.git.GitTool.xml
 
 *.bak
