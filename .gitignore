@@ -5,6 +5,10 @@ logs/*
 
 jenkins/war
 jenkins/plugins
+jenkins/updates
 jenkins/hudson.plugins.git.GitTool.xml
+
+jenkins/jobs/jquery-jshint
+!jenkins/jobs/jquery-jshint/config.xml
 
 *.bak

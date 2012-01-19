@@ -1,0 +1,3 @@
+[submodule "jshint-tap"]
+	path = jshint-tap
+	url = git://github.com/irae/jshint-tap.git

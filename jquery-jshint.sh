@@ -1,0 +1,1 @@
+jshint dist/jquery.js --config ../../../../jquery-jshint-config.json  --reporter ../../../../jshint-tap/jshint-tap.js > jquery-jshint.tap

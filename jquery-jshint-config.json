@@ -1,0 +1,15 @@
+{
+	"evil": true,
+	"undef": false,
+	"browser": true,
+	"wsh": true,
+	"eqnull": true,
+	"expr": true,
+	"curly": true,
+	"trailing": true,
+	"predef": [
+		"define",
+		"DOMParser"
+	],
+	"maxerr": 100
+}
