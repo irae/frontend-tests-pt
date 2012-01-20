@@ -52,7 +52,7 @@ stop_jenkins:
 #
 .PHONY: slide_gen
 slide_gen:
-	@landslide slides.md -i
+	@landslide slides.md -i -l table
 #
 .PHONY: slides
 slides:
@@ -62,13 +62,13 @@ slides:
 .PHONY: help
 help:
 	@echo "==== ${RED}Hi! U new here?${NC}"
-	@echo "   * ${GREEN}downloads${NC} : will get the binaries I don't like on git from the internet"
-	@echo "   * ${GREEN}clean-downloads${NC} : will delete files downloaded by 'make downloads'"
-	@echo "   * ${GREEN}clean${NC} : will delete log files and stuff"
-	@echo "==== ${RED}Hi! Slides${NC}"
-	@echo "   * ${GREEN}slide_gen${NC} : Will generate presentation.html from slides.md"
-	@echo "   * ${GREEN}slides${NC} : Will generate and open slideshow on browser"
-	@echo "==== ${RED}Hi! Continuous Integration${NC}"
-	@echo "   * ${GREEN}start_jenkins${NC} : will start jenkins on port 8081 with configdir in this project folder"
-	@echo "   * ${GREEN}stop_jenkins${NC} : will send a command to jenkins to stop (curl error if not running)"
+	@echo "   * ${GREEN}downloads${NC} : get the binaries I don't like on git from the internet"
+	@echo "   * ${GREEN}clean-downloads${NC} : delete files downloaded by 'make downloads'"
+	@echo "   * ${GREEN}clean${NC} : delete log files and stuff"
+	@echo "==== ${RED}Slides${NC}"
+	@echo "   * ${GREEN}slide_gen${NC} : generate presentation.html from slides.md"
+	@echo "   * ${GREEN}slides${NC} : generate and open slideshow on browser"
+	@echo "==== ${RED}Continuous Integration${NC}"
+	@echo "   * ${GREEN}start_jenkins${NC} : start jenkins on port 8081 with configdir in this project folder"
+	@echo "   * ${GREEN}stop_jenkins${NC} : send a command to jenkins to stop (curl error if not running)"
 #
