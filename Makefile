@@ -19,7 +19,11 @@ downloads:
 	@echo "Downloading binary (unversioned) files"
 	@echo "${GREEN}Jenkins${NC}"
 	@mkdir -p $(SRCDIR)/bin
-	@if [ ! -e "$(JENKINS)" ] ; then curl -L -o $(JENKINS) http://mirrors.jenkins-ci.org/war/1.420/jenkins.war; else echo "OK" ;fi
+	@if [ ! -e "$(JENKINS)" ] ; then curl -L -o $(JENKINS) http://mirrors.jenkins-ci.org/war/1.420/jenkins.war;fi
+	@echo "OK"
+	@echo "${GREEN}git submodules${NC}"
+	@git submodule init
+	@git submodule update
 #
 .PHONY: clean
 clean:

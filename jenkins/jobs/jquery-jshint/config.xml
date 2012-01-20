@@ -55,7 +55,7 @@
   <publishers>
     <org.tap4j.plugin.TapPublisher>
       <testResults>jquery-jshint.tap</testResults>
-      <failedTestsMarkBuildAsFailure>false</failedTestsMarkBuildAsFailure>
+      <failedTestsMarkBuildAsFailure>true</failedTestsMarkBuildAsFailure>
     </org.tap4j.plugin.TapPublisher>
   </publishers>
   <buildWrappers/>
