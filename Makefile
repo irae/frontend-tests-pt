@@ -24,6 +24,9 @@ downloads:
 	@echo "${GREEN}git submodules${NC}"
 	@git submodule init
 	@git submodule update
+	@echo "OK"
+	@echo "${GREEN}pip dependencies${NC}"
+	@pip install -r requirements.txt && echo "OK"
 #
 .PHONY: clean
 clean:
@@ -46,12 +49,26 @@ start_jenkins:
 stop_jenkins:
 	@curl http://0.0.0.0:8081/exit
 #
+#
+.PHONY: slide_gen
+slide_gen:
+	@landslide slides.md -i
+#
+.PHONY: slides
+slides:
+	@make slide_gen
+	@open presentation.html
+#
 .PHONY: help
 help:
 	@echo "==== ${RED}Hi! U new here?${NC}"
 	@echo "   * ${GREEN}downloads${NC} : will get the binaries I don't like on git from the internet"
 	@echo "   * ${GREEN}clean-downloads${NC} : will delete files downloaded by 'make downloads'"
+	@echo "   * ${GREEN}clean${NC} : will delete log files and stuff"
+	@echo "==== ${RED}Hi! Slides${NC}"
+	@echo "   * ${GREEN}slide_gen${NC} : Will generate presentation.html from slides.md"
+	@echo "   * ${GREEN}slides${NC} : Will generate and open slideshow on browser"
+	@echo "==== ${RED}Hi! Continuous Integration${NC}"
 	@echo "   * ${GREEN}start_jenkins${NC} : will start jenkins on port 8081 with configdir in this project folder"
 	@echo "   * ${GREEN}stop_jenkins${NC} : will send a command to jenkins to stop (curl error if not running)"
-	@echo "   * ${GREEN}clean${NC} : will delete log files and stuff"
 #

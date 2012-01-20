@@ -14,4 +14,9 @@ jenkins/plugins/subversion*
 jenkins/jobs/jquery-jshint
 !jenkins/jobs/jquery-jshint/config.xml
 
+presentation.html
+jenkins/.owner
+jenkins/Fingerprint*
+jenkins/Workspace*
+
 *.bak
