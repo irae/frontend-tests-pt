@@ -52,6 +52,9 @@
       <command>rsync -av --exclude=.git ../../../../qunit-tap test/</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
+      <command>jscoverage --no-instrument=intro.js --no-instrument=outro.js src --no-instrument=sizzle instrumented</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
       <command>python ../../../../get_jquery_tap.py --target=http://localhost/frontend-tests-pt/jenkins/jobs/jquery-qunit/workspace/test/?filter=core</command>
     </hudson.tasks.Shell>
   </builders>
