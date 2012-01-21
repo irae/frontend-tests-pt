@@ -5,6 +5,8 @@ logs/*
 
 *.pyc
 
+jenkins/queue.xml
+
 jenkins/war
 jenkins/updates
 
