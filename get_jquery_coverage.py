@@ -82,7 +82,7 @@ def get_report(target_url, command_executor=None, desired_capabilities=None):
     driver.get(target_url)
 
     driver.switch_to_frame(0)
-    WebDriverWait(driver, 30).until(lambda x : is_text_present(driver,"Tests completed"))
+    WebDriverWait(driver, 5*60).until(lambda x : is_text_present(driver,"Tests completed"))
     driver.switch_to_default_content()
     report =  driver.execute_script("var coverage = jscoverage_serializeCoverageToJSON(); return coverage;")
     driver.quit()
