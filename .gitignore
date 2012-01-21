@@ -21,5 +21,9 @@ jenkins/Workspace*
 
 jenkins/jobs/profile-jscoverage
 
+jenkins/jobs/jquery-qunit
+!jenkins/jobs/jquery-qunit/config.xml
+
+
 *.bak
 *.tap
