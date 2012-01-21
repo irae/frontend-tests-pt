@@ -19,4 +19,6 @@ jenkins/.owner
 jenkins/Fingerprint*
 jenkins/Workspace*
 
+jenkins/jobs/profile-jscoverage
+
 *.bak

@@ -117,6 +117,15 @@
 
 -------------------------------------
 
+# Exemplo de Cobertura
+
+### Presenter Notes
+
+* Profile app/static/js/templates/SourcesLoader.js
+*
+
+-------------------------------------
+
 # Referências (1/3)
 
 ### Reading
