@@ -40,7 +40,7 @@ def get_report(target_url, command_executor=None, desired_capabilities=None):
         driver = webdriver.Remote(command_executor, desired_capabilities)
 
     driver.get(target_url)
-    WebDriverWait(driver, 30).until(lambda x : is_text_present(driver,"Tests completed"))
+    WebDriverWait(driver, 300).until(lambda x : is_text_present(driver,"Tests completed"))
     report =  driver.execute_script("return tapResults;")
     driver.quit()
 

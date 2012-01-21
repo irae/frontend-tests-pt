@@ -46,7 +46,13 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>../../../../get_jquery_tap.sh</command>
+      <command>python ../../../../patch_jquery.py --target=test/index.html</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>rsync -av --exclude=.git ../../../../qunit-tap test/</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>python ../../../../get_jquery_tap.py --target=http://localhost/frontend-tests-pt/jenkins/jobs/jquery-qunit/workspace/test/?filter=core</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>

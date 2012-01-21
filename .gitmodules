@@ -1,3 +1,6 @@
 [submodule "jshint-tap"]
 	path = jshint-tap
 	url = git://github.com/irae/jshint-tap.git
+[submodule "qunit-tap"]
+	path = qunit-tap
+	url = git://github.com/twada/qunit-tap.git
