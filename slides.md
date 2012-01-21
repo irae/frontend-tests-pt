@@ -17,11 +17,13 @@
 # O que veremos
 
 * Objetivos de testar seu código
-* Tipos de testes existentes
-* Exemplo de javascript: Abas
+* Tipos de testes
 * Ferramentas de testes
 * Scritps e automação
 * Integração Contínua
+
+### Presenter Notes
+* todas as etapas tem exemplos
 
 -------------------------------------
 
@@ -72,7 +74,7 @@
 
 # Ferramentas
 
-## Testes unitários
+## Testes unitários e/ou funcionais
 
 * qUnit
 * YUI Test
@@ -87,15 +89,61 @@
 
 -------------------------------------
 
-# Referências
+# Exemplos
 
+-------------------------------------
+
+# Cobertura de código
+
+![jscoverage_profile](slides_img/yahoo_profile_jscoverage.png)
+
+# Presenter Notes
+
+* Análise dos testes unitários
+* Detecta quais linhas foram ou não executadas
+* Aponta a falta de testes
+
+-------------------------------------
+
+# Cobertura de código
+
+![jscoverage_profile](slides_img/profile_settings_some_covered_lines.png)
+
+# Presenter Notes
+
+* Análise dos testes unitários
+* Detecta quais linhas foram ou não executadas
+* Aponta a falta de testes
+
+-------------------------------------
+
+# Referências (1/3)
+
+### Reading
 * http://en.wikipedia.org/wiki/Software_testing
-* https://github.com/douglascrockford/JSLint
+* http://net.tutsplus.com/tutorials/javascript-ajax/how-to-test-your-javascript-code-with-qunit/
+* https://github.com/heynemann/pyccuracy/wiki/
+* https://github.com/guilhermechapiewski/pyccuracy-presentation
+
+-------------------------------------
+
+# Referências (2/3)
+
+### Tools
 * http://www.jshint.com/
-* https://github.com/jquery/qunit
-* https://github.com/yui/yuitest
 * http://visionmedia.github.com/mocha/
 * http://yuilibrary.com/projects/yuitest/
 * http://jenkins-ci.org/
 * http://busterjs.org/
+* https://github.com/douglascrockford/JSLint
+* https://github.com/jquery/qunit
+* https://github.com/yui/yuitest
+
+-------------------------------------
+
+# Referências (3/3)
+
+### Repositories / Projects
 * https://github.com/twada/qunit-tap
+* https://github.com/bitzesty/qunit-mock
+* https://github.com/joshuaclayton/qunit-examples
