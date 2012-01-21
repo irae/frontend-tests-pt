@@ -122,7 +122,28 @@
 ### Presenter Notes
 
 * Profile app/static/js/templates/SourcesLoader.js
-*
+
+-------------------------------------
+
+# Alguns scripts
+
+-------------------------------------
+
+# Jenkins
+
+![Profile Jenkins](slides_img/profile_jenkins.png)
+
+-------------------------------------
+
+# Obrigado
+
+* [@irae](http://twitter.com/irae)
+* [tech.irae.pro](http://tech.irae.pro/) (blog)
+* [linkedin.com/in/iraee](http://www.linkedin.com/in/iraee)
+* [github.com/irae](https://github.com/irae)
+* https://github.com/irae/frontend-tests-pt
+
+![qrcode](slides_img/irae.qr.png)
 
 -------------------------------------
 

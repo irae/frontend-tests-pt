@@ -3,6 +3,8 @@
 bin/*
 logs/*
 
+*.pyc
+
 jenkins/war
 jenkins/updates
 
