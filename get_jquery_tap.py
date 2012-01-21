@@ -28,6 +28,7 @@ class bcolors:
 colors = bcolors()
 
 def console_output(report):
+    # TODO: give output some colors
     print report
 
 def get_report(target_url, command_executor=None, desired_capabilities=None):
@@ -71,6 +72,10 @@ else:
         options.server,
         webdriver.DesiredCapabilities.FIREFOX,
         )
+
+tap_file = open('jquery_qunit.tap', 'w')
+tap_file.write(report)
+tap_file.close()
 
 console_output(report)
 
