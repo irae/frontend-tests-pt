@@ -123,7 +123,7 @@ else:
         webdriver.DesiredCapabilities.FIREFOX,
         )
 
-xml_string =  generate_cobertura_xml(report)
+xml_string =  generate_cobertura_xml(report, 'jquery', 'src')
 
 xml_file = open('jscoverage_cobertura.xml', 'w')
 xml_file.write(xml_string)

@@ -55,7 +55,7 @@
       <command>jscoverage --no-instrument=intro.js --no-instrument=outro.js src --no-instrument=sizzle instrumented</command>
     </hudson.tasks.Shell>
     <hudson.tasks.Shell>
-      <command>python ../../../../get_jquery_coverage.py --target=http://localhost/frontend-tests-pt/jenkins/jobs/jquery-jscoverage/workspace/instrumented/jscoverage.html?../test/</command>
+      <command>python ../../../../get_jquery_coverage.py --no-color --target=http://localhost/frontend-tests-pt/jenkins/jobs/jquery-jscoverage/workspace/instrumented/jscoverage.html?../test/</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>

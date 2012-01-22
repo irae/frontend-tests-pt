@@ -3,7 +3,7 @@ import xml.dom.minidom
 from xml.dom.minidom import getDOMImplementation
 from xml.dom.minidom import DOMImplementation
 
-def generate_cobertura_xml(report):
+def generate_cobertura_xml(jscoverage_report, project_name, source_path):
     imp = DOMImplementation()
     doctype = imp.createDocumentType(
         qualifiedName='coverage',
@@ -25,13 +25,13 @@ def generate_cobertura_xml(report):
 
     source_element = doc.createElementNS(None, "source")
     sources_element.appendChild(source_element)
-    text = doc.createTextNode('app/static/js')
+    text = doc.createTextNode(source_path)
     source_element.appendChild(text)
 
     packages_element = doc.createElementNS(None, "packages")
     coverage_element.appendChild(packages_element)
     package_element = doc.createElementNS(None, "package")
-    package_element.setAttributeNS(None, "name", "Project")
+    package_element.setAttributeNS(None, "name", project_name)
     package_element.setAttributeNS(None, "branch-rate", "0")
     package_element.setAttributeNS(None, "complexity", "0.0")
     packages_element.appendChild(package_element)
@@ -41,7 +41,7 @@ def generate_cobertura_xml(report):
 
     total_statements = 0
     total_hits = 0
-    for script in report:
+    for script in jscoverage_report:
         statement_lines = 0
         covered_lines = 0
         line_number = 0
@@ -52,7 +52,7 @@ def generate_cobertura_xml(report):
         class_element.appendChild(methods_element)
         lines_element = doc.createElementNS(None, "lines")
         class_element.appendChild(lines_element)
-        for line in report[script]["coverage"]:
+        for line in jscoverage_report[script]["coverage"]:
             if line is not None:
                 statement_lines = statement_lines + 1
                 total_statements = total_statements + 1
@@ -74,10 +74,6 @@ def generate_cobertura_xml(report):
         class_element.setAttributeNS(None, "line-rate", str(round((float(covered_lines)/float(statement_lines)),2)))
 
         classes_element.appendChild(class_element)
-        # print "Total lines: " + str(len(report[script]["coverage"]))
-        # print "    statements:" + str(statement_lines)
-        # print "    covered: " + str(covered_lines)
-        # print "    percentage: " + str(float(covered_lines)/float(statement_lines)*100.0)
 
     package_element.setAttributeNS(None, "line-rate", str(round((float(total_hits)/float(total_statements)),2)))
 
