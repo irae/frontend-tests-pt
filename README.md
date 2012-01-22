@@ -19,6 +19,7 @@ A versão atual foi/será apresentada no BH.js em Belo Horizonte, MG, Brasil em 
 
 Os slides em formato texto incluindo comentários que fiz para me guiar durante a palestra estão disponíveis:
 
+* Visualizar slides: [http://irae.github.com/frontend-tests-pt/](http://irae.github.com/frontend-tests-pt/)
 * Slides em formato texto: [slides.md](https://github.com/irae/frontend-tests-pt/blob/master/slides.md)
 
 ## Usando esse repositório:
