@@ -34,6 +34,7 @@ jenkins/jobs/jquery-jscoverage
 jenkins/jobs/yui-profile-jscoverage/
 
 !**/config.xml
+jenkins/config.xml
 
 *.bak
 *.tap
