@@ -26,12 +26,18 @@
 
 # Ferramentas
 
-## Validadores
+* Static code analisys
+* Unit test
+* Coverage
+* Browser tests
+
+-------------------------------------
+
+# Validadores
 
 * JsLint
 * JsHint
 
-#
     npm install jslint jshint
 
 ### Presenter Notes
@@ -40,9 +46,7 @@
 
 -------------------------------------
 
-# Ferramentas
-
-## Testes unitários e/ou funcionais
+# Testes unitários e/ou funcionais
 
 * qUnit
 * YUI Test
@@ -86,6 +90,26 @@
 # Cobertura de código
 
 ![jscoverage_profile](slides_img/profile_settings_some_covered_lines.png)
+
+
+-------------------------------------
+
+# Browser tests
+
+* Selenium
+* Cucumber
+* Pyccuracy
+* Zombie
+* Phantom JS
+
+
+-------------------------------------
+
+# Pyccuracy
+
+* BDD Style
+* Usa o Selenium
+* Fácil de escrever os testes
 
 
 -------------------------------------
