@@ -14,45 +14,13 @@
 
 -------------------------------------
 
-# O que veremos
-
-* Objetivos de testar seu código
-* Tipos de testes
-* Ferramentas de testes
-* Scritps e automação
-* Integração Contínua
-
-### Presenter Notes
-* todas as etapas tem exemplos
-
--------------------------------------
-
 # Por que testar seu código?
-
-### Presenter Notes
 
 * corrigir bugs é chato
 * corrigir de novo é mais chato
 * segurança ao subir o código
 * documentação
-
--------------------------------------
-
-# Tipos de testes
-
-* Whitebox
-    * Static code analysis
-    * Unit
-    * Coverage, Branch, Path, Conditional
-* Blackbox
-    * Integration
-    * Acceptance
-* Graybox
-    * Black + Docs
-
--------------------------------------
-
-# Exemplo
+* continuous deployment
 
 -------------------------------------
 
@@ -78,9 +46,11 @@
 
 * qUnit
 * YUI Test
+* JSUnit
 * Jasmine
 * Mocha
 * Buster.js
+* etc...
 
 # Presenter Notes
 
@@ -95,7 +65,8 @@
 
 # Cobertura de código
 
-![jscoverage_profile](slides_img/yahoo_profile_jscoverage.png)
+* JSCoverage
+* YUITest
 
 # Presenter Notes
 
@@ -107,25 +78,15 @@
 
 # Cobertura de código
 
+![jscoverage_profile](slides_img/yahoo_profile_jscoverage.png)
+
+
+-------------------------------------
+
+# Cobertura de código
+
 ![jscoverage_profile](slides_img/profile_settings_some_covered_lines.png)
 
-# Presenter Notes
-
-* Análise dos testes unitários
-* Detecta quais linhas foram ou não executadas
-* Aponta a falta de testes
-
--------------------------------------
-
-# Exemplo de Cobertura
-
-### Presenter Notes
-
-* Profile app/static/js/templates/SourcesLoader.js
-
--------------------------------------
-
-# Alguns scripts
 
 -------------------------------------
 
@@ -135,7 +96,11 @@
 
 -------------------------------------
 
-# Obrigado
+# Scripts e exemplos
+
+-------------------------------------
+
+# Perguntas?
 
 * [@irae](http://twitter.com/irae)
 * [tech.irae.pro](http://tech.irae.pro/) (blog)

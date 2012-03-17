@@ -31,6 +31,7 @@ jenkins/jobs/jquery-qunit
 jenkins/jobs/jquery-jscoverage
 !jenkins/jobs/jquery-jscoverage/config.xml
 
+jenkins/jobs/yui-profile-jscoverage/
 
 !**/config.xml
 
